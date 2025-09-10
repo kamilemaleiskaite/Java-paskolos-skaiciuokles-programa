@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.example.paskolosskaiciuokle.Lentele">
+    <TableView fx:id="loanTable" layoutX="60.0" layoutY="41.0" prefHeight="385.0" prefWidth="480.0">
+        <columns>
+            <TableColumn fx:id="menesis" prefWidth="100.0" text="Mėnesis" />
+            <TableColumn fx:id="likutis" prefWidth="123.0" text="Likutis (€)" />
+            <TableColumn fx:id="palukanos" prefWidth="117.0" text="Procentai (%)" />
+            <TableColumn fx:id="menesineIm" prefWidth="140.0" text="Mėnesinė įmoka (€)" />
+        </columns>
+    </TableView>
+   <Button fx:id="grafikoMyg" layoutX="60.0" layoutY="443.0" mnemonicParsing="false" onAction="#showGraph" text="Rodyti grafiką" />
+   <Button fx:id="ataskaitosMyg" layoutX="442.0" layoutY="443.0" mnemonicParsing="false" onAction="#failoSukurimas" text="Gauti ataskaitą" />
+</AnchorPane>
